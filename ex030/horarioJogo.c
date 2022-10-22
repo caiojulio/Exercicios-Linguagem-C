@@ -86,21 +86,21 @@ int main(){
 	
 	// Apresenta duração do jogo
 	
-	if (horaDuracao < 25){
-		if (horaDuracao < 10){
-			if (minutoDuracao < 10){
-				printf("\n\nHorario de duracao do Jogo: 0%dh e 0%dmin\n", horaDuracao, minutoDuracao);
-			} else{
-				printf("\n\nHorario de duracao do Jogo: 0%dh e %dmin\n", horaDuracao, minutoDuracao);
-			} 
+	
+	if (horaDuracao < 10){
+		if (minutoDuracao < 10){
+			printf("\n\nHorario de duracao do Jogo: 0%dh e 0%dmin\n", horaDuracao, minutoDuracao);
+		} else{
+			printf("\n\nHorario de duracao do Jogo: 0%dh e %dmin\n", horaDuracao, minutoDuracao);
+		} 
+	} else {
+		if (minutoDuracao < 10){
+			printf("\n\nHorario de duracao do Jogo: %dh e 0%dmin\n", horaDuracao, minutoDuracao);
 		} else {
-			if (minutoDuracao < 10){
-				printf("\n\nHorario de duracao do Jogo: %dh e 0%dmin\n", horaDuracao, minutoDuracao);
-			} else {
-				printf("\n\nHorario de duracao do Jogo: %dh e %dmin\n", horaDuracao, minutoDuracao);
-			}
+			printf("\n\nHorario de duracao do Jogo: %dh e %dmin\n", horaDuracao, minutoDuracao);
 		}
-	}	
+	}
+		
 	
 	system("pause");
 }
